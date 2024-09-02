@@ -16,6 +16,7 @@
 
 ## 1.2. Que aspectos NO cumplió o desarrolló de la actividad propuesta por el profesor:
 -El proyecto no utiliza un middleware orientado a mensajes como RabbitMQ para la coordinación entre peers, sino que implementa un sistema de notificaciones más simple utilizando REST.
+- El proyecto no se logro la dockerizacion ni el despliegue en AWS.
 
 # 2. información general de diseño de alto nivel, arquitectura, patrones, mejores prácticas utilizadas.
 - Arquitectura: La arquitectura del proyecto es P2P, donde cada peer actúa tanto como cliente y servidor. La comunicación se realiza a través de REST para operaciones de control y gRPC para la transferencia de archivos.
