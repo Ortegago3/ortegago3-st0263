@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+service FileService {
+  rpc ListFiles (FileRequest) returns (FileListResponse) {}
+  rpc UploadFile (stream FileChunk) returns (UploadStatus) {}
+}
+
+message FileRequest {
+  string directory = 1;
+}
+
+message FileListResponse {
+  repeated string files = 1;
+}
+
+message FileChunk {
+  bytes content = 1;
+}
+
+message UploadStatus {
+  string status = 1;
+}

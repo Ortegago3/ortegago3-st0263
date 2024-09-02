@@ -1,0 +1,7 @@
+{
+    "ip": "127.0.0.1",
+    "port": 5001,
+    "directory": "./shared/files",
+    "peer_seed_url": "http://127.0.0.1:5001"
+  }
+  
