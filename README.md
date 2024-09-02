@@ -3,6 +3,9 @@
 - **Estudiante:** Holmer Ortega Gomez. hortegag@eafit.edu.co
 - **Profesor:** Edwin Nelson Montoya Munera. emontoya@eafit.edu.co
 
+# Link Sustentacion del video: https://youtu.be/XzsPscIHO5A?si=b-J8jYHe6HMEUwya
+
+
 # Reto 1:
 - # 1. Breve descripcion de la actividad:
 - Este proyecto consiste en la implementación de un sistema P2P para la compartición de archivos utilizando microservicios distribuidos. Los peers pueden comunicarse entre sí utilizando REST y gRPC para realizar operaciones como registro de peers, búsqueda de archivos, y transferencia de archivos. Además, se implementa un sistema de notificaciones simple utilizando REST para informar a otros peers sobre nuevos archivos disponibles.
@@ -16,12 +19,13 @@
 
 ## 1.2. Que aspectos NO cumplió o desarrolló de la actividad propuesta por el profesor:
 -El proyecto no utiliza un middleware orientado a mensajes como RabbitMQ para la coordinación entre peers, sino que implementa un sistema de notificaciones más simple utilizando REST.
+- El proyecto no se logro la dockerizacion ni el despliegue en AWS.
 
 # 2. información general de diseño de alto nivel, arquitectura, patrones, mejores prácticas utilizadas.
 - Arquitectura: La arquitectura del proyecto es P2P, donde cada peer actúa tanto como cliente y servidor. La comunicación se realiza a través de REST para operaciones de control y gRPC para la transferencia de archivos.
 - Patrones de Diseño: Se utilizaron patrones como Microservicios y API Gateway (para manejar la comunicación entre peers).
 - Mejores Prácticas: Uso de entorno virtual para gestionar dependencias, separación de preocupaciones entre diferentes servicios, y manejo de errores robusto en la comunicación entre peers.
-
+![image](https://github.com/user-attachments/assets/39d39b3b-9b0f-4dbb-a1a1-8f14cded2e4f)
 
 # 3. Descripción del ambiente de desarrollo y técnico:
 - Lenguaje de Programación: Python 3.x
